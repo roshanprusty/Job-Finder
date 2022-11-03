@@ -89,6 +89,12 @@
     color: #66f;
     transition: color 1s ease 0s;
   }
+  a#formlink{
+    color: white;
+  }
+  a#formlink:hover{
+    color: #66f;
+  }
   .about {
     /* background-color: #66f; */
     color: black;
@@ -143,14 +149,12 @@
     font-size: 18px;
     text-align: center;
   }
-  a#formlink{
-    color: white;
-  }
-  h1{
+  
+  /* h1{
     font-size:25px;
     text-align: left;
     text-transform:capitalize;
-}
+} */
 /* .container h1{
 
 } */
