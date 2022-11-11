@@ -16,13 +16,13 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
     <!-- swiper  -->
@@ -30,6 +30,15 @@
 </head>
 
 <body>
+    <div id="progressive" id="font-color">
+        <h3 class="loadFont center-align animated bounceInLeft" id="side1">Please Wait<span id="dot1">...</span><span
+                id="dot2">...</span></h3>
+
+        <div class="progress z-depth-1 animated bounceInLeft" id="side2">
+            <div class="progress-bar" data-transitiongoal="100"></div>
+        </div>
+    </div>
+
     <nav class="navbar">
         <div class="container">
 
@@ -382,7 +391,8 @@
                             if not more so,in the company I joined. I honestly feel I got every penny&rsquo;s worth.
                         </h2>
                         <p class="testimonial-card__body clr-opacity">
-                            &ldquo; I was an EMT for many years before I joined the bootcamp. I&rsquo;ve been looking
+                            &ldquo; I was an EMT for many years before I joined the bootcamp. I&rsquo;ve been
+                            looking
                             to make a transition and have heard some people who had an amazing experience here.
                             I signed up for the free intro course and found it incredibly fun! I enrolled shortly
                             thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since
@@ -409,8 +419,10 @@
                             The team was very supportive and kept me motivated
                         </h2>
                         <p class="testimonial-card__body clr-opacity">
-                            &ldquo; I started as a total newbie with virtually no coding skills. I now work as a mobile
-                            engineer for a big company. This was one of the best investments I&rsquo;ve made in myself.
+                            &ldquo; I started as a total newbie with virtually no coding skills. I now work as a
+                            mobile
+                            engineer for a big company. This was one of the best investments I&rsquo;ve made in
+                            myself.
                             &rdquo;
                         </p>
                     </div>
@@ -432,7 +444,8 @@
                             An overall wonderful and rewarding experience
                         </h2>
                         <p class="testimonial-card__body clr-opacity">
-                            &ldquo; Thank you for the wonderful experience! I now have a job I really enjoy, and make a
+                            &ldquo; Thank you for the wonderful experience! I now have a job I really enjoy, and
+                            make a
                             good
                             living while doing something I love. &rdquo;
                         </p>
@@ -457,8 +470,10 @@
                             and learning from their experiences was easy.
                         </h2>
                         <p class="testimonial-card__body clr-opacity">
-                            &ldquo; The staff seem genuinely concerned about my progress which I find really refreshing.
-                            The program gave me the confidence necessary to be able to go out in the world and present
+                            &ldquo; The staff seem genuinely concerned about my progress which I find really
+                            refreshing.
+                            The program gave me the confidence necessary to be able to go out in the world and
+                            present
                             myself as a capable junior developer. The standard is above the rest. You will get the
                             personal
                             attention you need from an incredible community of smart and amazing people. &rdquo;
@@ -482,15 +497,20 @@
                             Such a life-changing experience. Highly recommended!
                         </h2>
                         <p class="testimonial-card__body clr-opacity">
-                            &ldquo; Before joining the bootcamp, I&rsquo;ve never written a line of code. I needed some
+                            &ldquo; Before joining the bootcamp, I&rsquo;ve never written a line of code. I needed
+                            some
                             structure from professionals who can help me learn programming step by step. I was
                             encouraged
-                            to enroll by a former student of theirs who can only say wonderful things about the program.
-                            The entire curriculum and staff did not disappoint. They were very hands-on and I never had
+                            to enroll by a former student of theirs who can only say wonderful things about the
+                            program.
+                            The entire curriculum and staff did not disappoint. They were very hands-on and I never
+                            had
                             to
                             wait long for assistance. The agile team
-                            project, in particular, was outstanding. It took my learning to the next level in a way that
-                            no tutorial could ever have. In fact, I&rsquo;ve often referred to it during interviews as
+                            project, in particular, was outstanding. It took my learning to the next level in a way
+                            that
+                            no tutorial could ever have. In fact, I&rsquo;ve often referred to it during interviews
+                            as
                             an
                             example of my development experience. It certainly helped me land a job as a full-stack
                             developer after receiving multiple offers. 100% recommend! &rdquo;
@@ -734,5 +754,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
     <!-- <script src="./script.js"></script>  -->
 </body>
+<script>
+    var loader = document.getElementById("progressive");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    })
+</script>
 
 </html>

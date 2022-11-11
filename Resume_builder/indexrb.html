@@ -15,6 +15,14 @@
 </head>
 
 <body>
+  <div id="progressive" id="font-color">
+    <h3 class="loadFont center-align animated bounceInLeft" id="side1">Please Wait<span id="dot1">...</span><span
+        id="dot2">...</span></h3>
+
+    <div class="progress z-depth-1 animated bounceInLeft" id="side2">
+      <div class="progress-bar" data-transitiongoal="100"></div>
+    </div>
+  </div>
   <!-- partial:index.partial.html -->
   <div id="javascript_header"></div>
   <form>
@@ -24,7 +32,7 @@
     </div>
 
     <h2>Personal Details</h2>
- 
+
     <!-- name  -->
     <div class="form-group">
       <label for="name">Full Name <span>*</span></label>
@@ -81,22 +89,22 @@
     <div class="line-break"></div>
     <div class="form-group">
       <span>Skill 1</span>
-      <input type="text" name="skill1" id="skill1" placeholder="Enter your skill" >
+      <input type="text" name="skill1" id="skill1" placeholder="Enter your skill">
     </div>
     <div class="form-group">
       <span>Skill 2</span>
       <!-- 9 -->
-      <input type="text" name="skill2" id="skill2" placeholder="Enter your skill" >
+      <input type="text" name="skill2" id="skill2" placeholder="Enter your skill">
     </div>
     <div class="form-group">
       <span>Skill 3</span>
       <!-- 10 -->
-      <input type="text" name="skill3" id="skill3" placeholder="Enter your skill" >
+      <input type="text" name="skill3" id="skill3" placeholder="Enter your skill">
     </div>
     <div class="form-group">
       <span>Skill 4</span>
       <!-- 11 -->
-      <input type="text" name="skill4" id="skill4" placeholder="Enter your skill" >
+      <input type="text" name="skill4" id="skill4" placeholder="Enter your skill">
     </div>
 
     <!-- education  -->
@@ -104,11 +112,11 @@
     <div class="line-break"></div>
     <div class="form-group">
       <span>University</span>
-      <input type="text" name="university" id="university" placeholder="University Name" >
+      <input type="text" name="university" id="university" placeholder="University Name">
     </div>
     <div class="form-group">
       <span>Overall CGPA</span>
-      <input type="text" name="cgpa" id="cgpa" placeholder="Enter your cgpa" >
+      <input type="text" name="cgpa" id="cgpa" placeholder="Enter your cgpa">
     </div>
     <!-- <div class="form-group">
       <span>Course</span>
@@ -118,13 +126,15 @@
 
       <span>Intermideate Percentage</span>
       <!-- 10 -->
-      <input type="text" name="intermideatepercentage" id="intermideatepercentage" placeholder="Enter your school Intermideate Percentage" >
+      <input type="text" name="intermideatepercentage" id="intermideatepercentage"
+        placeholder="Enter your school Intermideate Percentage">
     </div>
 
     <div class="form-group">
       <span>Matriculate Percentage</span>
       <!-- 11 -->
-      <input type="text" name="matriculatepercentage" id="matriculatepercentage" placeholder="Enter your Matric percentage" >
+      <input type="text" name="matriculatepercentage" id="matriculatepercentage"
+        placeholder="Enter your Matric percentage">
     </div>
 
     <!-- projects -->
@@ -133,28 +143,28 @@
     <div class="form-group">
       <span>Project 1</span>
       <!-- 8 -->
-      <input type="text" name="project1" id="project1" placeholder="Project Name" >
+      <input type="text" name="project1" id="project1" placeholder="Project Name">
       <br><br>
-      <input type="text" name="project1l" id="project1l" placeholder="Project Link" >
+      <input type="text" name="project1l" id="project1l" placeholder="Project Link">
       <br><br>
-      <textarea type="text" name="project1d" id="project1d" placeholder="Project Detail" ></textarea>
+      <textarea type="text" name="project1d" id="project1d" placeholder="Project Detail"></textarea>
     </div>
     <div class="form-group">
       <span>Project 2</span>
       <!-- 8 -->
-      <input type="text" name="project2" id="project2" placeholder="Project Name" ><br><br>
-      <input type="text" name="project2l" id="project2l" placeholder="Project Link" ><br><br>
-      <textarea type="text" name="project2d" id="project2d" placeholder="Project Detail" ></textarea>
+      <input type="text" name="project2" id="project2" placeholder="Project Name"><br><br>
+      <input type="text" name="project2l" id="project2l" placeholder="Project Link"><br><br>
+      <textarea type="text" name="project2d" id="project2d" placeholder="Project Detail"></textarea>
     </div>
     <div class="form-group">
       <span>Project 3</span>
       <!-- 8 -->
-      <input type="text" name="project3" id="project3" placeholder="Project Name" ><br><br>
-      <input type="text" name="project3l" id="project3l" placeholder="Project Link" ><br><br>
-      <textarea type="text" name="project3d" id="project3d" placeholder="Project Detail" ></textarea>
+      <input type="text" name="project3" id="project3" placeholder="Project Name"><br><br>
+      <input type="text" name="project3l" id="project3l" placeholder="Project Link"><br><br>
+      <textarea type="text" name="project3d" id="project3d" placeholder="Project Detail"></textarea>
     </div>
-    
-  
+
+
 
 
     <h3>Most Recent Job</h3>
@@ -236,5 +246,11 @@
   <script type="module" src="./scriptrb.js"></script>
 
 </body>
+<script>
+  var loader = document.getElementById("progressive");
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  })
+</script>
 
 </html>
