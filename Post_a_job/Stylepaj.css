@@ -1,4 +1,138 @@
 
+@keyframes charColor {
+  0% {
+    color: #fff;
+ }
+  50% {
+    color: #66f;
+ }
+  100% {
+    color: #fff;
+ }
+}
+.loadingScreen {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 900000;
+  overflow: hidden;
+  background: #fff;
+}
+.loadingScreen .loadingScreen__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: auto;
+  height: 100px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span {
+  padding: 5px;
+  vertical-align: middle;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(1) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 100ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(2) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 200ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(3) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 300ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(4) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 400ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(5) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 500ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(6) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 600ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(7) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 700ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(8) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 800ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
+.loadingScreen .loadingScreen__text .loadingScreen__text__span:nth-child(9) {
+  display: inline-block;
+  animation-name: charColor;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: 900ms;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+}
 .image {
     background-color: #eceef3;
     background: url(https://images.pexels.com/photos/6585012/pexels-photo-6585012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center;
