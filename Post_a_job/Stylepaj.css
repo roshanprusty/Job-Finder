@@ -225,9 +225,11 @@
   }
   a#formlink{
     color: white;
+    text-decoration: none;
   }
   a#formlink:hover{
     color: #66f;
+    text-decoration: none;
   }
   .about {
     /* background-color: #66f; */
